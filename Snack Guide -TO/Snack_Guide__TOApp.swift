@@ -11,7 +11,7 @@ import SwiftUI
 struct Snack_Guide__TOApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            FrontPage()
         }
     }
 }
