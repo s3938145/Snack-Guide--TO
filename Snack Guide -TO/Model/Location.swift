@@ -17,6 +17,7 @@ struct Location: Identifiable, Codable {
     var type: [String]
     var rating: String
     var address: Address
+    var hours: String
     var description: String
     var coordinates: Coordinates
     var locationCoordinate: CLLocationCoordinate2D {
@@ -28,7 +29,7 @@ struct Location: Identifiable, Codable {
 }
 
 struct Address: Codable {
-    var number: Int
+    var number: Int?
     var streetName: String
 
     enum CodingKeys: String, CodingKey {

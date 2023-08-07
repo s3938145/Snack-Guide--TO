@@ -16,7 +16,16 @@ struct LocationRow: View {
             location.image
                 .resizable()
                 .frame(width: 70, height: 70)
-            Text(location.name)
+            VStack(alignment: .leading){
+                Text(location.name)
+                HStack{
+                    Text(location.rating)
+                        .foregroundColor(.green)
+                    Image("star")
+                        .resizable()
+                        .frame(width: 20, height: 20)
+                }
+            }
         }
     }
 }

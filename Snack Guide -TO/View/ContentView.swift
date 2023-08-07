@@ -5,16 +5,33 @@
 //
 
 import SwiftUI
-
-struct FrontPage: View {
+ 
+struct ContentView: View {
     
-    @State var isExpanded = false
     @State var showingInfo = false
-    @State var subviewHeight : CGFloat = 0
+    @State var theColorScheme: ColorScheme = .dark
+    
+    func toggleColorScheme() {
+        theColorScheme = (theColorScheme == .dark) ? .light : .dark
+    }
     
     var body: some View {
         VStack {
             HStack{
+                Button(action: self.toggleColorScheme) {
+                    if(theColorScheme == .dark) {
+                        Text("Light Mode")
+                            .padding(5)
+                            .background(Color.primary.cornerRadius(10.0))
+                    } else {
+                        Text("Dark Mode")
+                            .padding(5)
+                            .background(Color.primary.cornerRadius(10.0))
+                    }
+
+                }
+                .preferredColorScheme(theColorScheme)
+                
                 Spacer()
                 Button("i"){
                     showingInfo = true
@@ -38,9 +55,7 @@ struct FrontPage: View {
             }
             .padding()
             
-            Button(action: {
-
-            }, label: {
+            Button(action: {}, label: {
                 Text("Start Snacking")
                     .font(.largeTitle)
                     .foregroundColor(.white
@@ -58,6 +73,6 @@ struct FrontPage: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        FrontPage()
+        ContentView()
     }
 }

@@ -10,29 +10,18 @@ import SwiftUI
 struct LocationDetails: View {
     
     let text: String
-    let rating: String
-    let imageName: String
+    @Environment(\.colorScheme) var colorScheme
     
     var body: some View {
         RoundedRectangle(cornerRadius: 25)
-            .fill(Color.white)
+            .fill(colorScheme == .dark ? Color.black : Color.white)
             .frame(height: 400)
             .overlay(
-                VStack {
-                    HStack {
-                        Section {
-                            Text(rating)
-                                .foregroundColor(.green)
-                            .font(.system(size: 20))
-                            Image("star")
-                                .resizable()
-                                .frame(width: 20, height: 20)
-                        }
-                        .padding(.horizontal, -4)
-                    }
+                VStack(alignment: .center) {
                     ScrollView(.vertical) {
                         Text(text)
-                            .foregroundColor(.black)
+                            .foregroundColor(.primary)
+                            .padding(.top)
                     }
                     Spacer()
                 }.padding(.all, 10))
@@ -46,10 +35,10 @@ struct LocationDetails_Previews: PreviewProvider {
             Color(.blue)
                 .edgesIgnoringSafeArea(.all)
             VStack{
-                LocationDetails(text: "St Lawrence Market", rating: "4.5", imageName: "Le Gourmand" )
+                LocationDetails(text: "St Lawrence Market")
             }
         }
-        LocationDetails(text: "St Lawrence Market", rating: "4.5", imageName: "Le Gourmand")
+        LocationDetails(text: "St Lawrence Market")
             .previewLayout(.sizeThatFits)
     }
 }

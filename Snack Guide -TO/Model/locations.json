@@ -18,6 +18,9 @@
           "latitude": 43.642664096,
           "longitude": -79.369665188
       },
+      "hours":
+          "Monday Closed\n\n Tuesday 9AM - 7PM\n\n Wednesday 9AM - 7PM\n\n Thursday 9AM - 7PM\n\n Friday 9AM - 7PM\n\n Saturday 7AM - 5PM\n\n Sunday 10AM - 5PM"
+          ,
       "description": "\tIn the centre of historic Old Town Toronto, close to the hub of today’s downtown sits the St. Lawrence Market Complex (93 Front St. E.)—three buildings that have served as Toronto’s social centre, City Hall and marketplace throughout the city’s history.\t\n\nExplore the South Market building with its restaurants, artisans and specialty food vendors offering visitors the unique and lively atmosphere of an authentic farmers’ market; the Market Gallery with changing exhibits dedicated to Toronto’s art, culture and history; and the Market Kitchen with cooking classes for all ages and abilities.\t\n\nIn the North Market building, you’ll find the farmers’ market where farmers arrive every Saturday at dawn to sell their meat, cheese and produce—just as they have been doing for more than 200 years. St. Lawrence Hall, which contains the magnificent Great Hall, continues to be Toronto’s favourite site for social and business functions. Complete your visit with a walking tour of the St. Lawrence Market Complex to hear about its 200-year history."
     },
     {
@@ -37,7 +40,10 @@
           "latitude": 43.773595241521825,
           "longitude": -79.41368017593116
       },
-      "description": ""
+      "hours":
+          "Monday 12 - 11PM\n\nTuesday 12 - 11PM\n\nWednesday 12 - 11PM\n\nThursday 12 - 11PM\n\nFriday 12PM - 12AM\n\nSaturday 12PM - 12AM\n\nSunday Closed"
+          ,
+      "description": "\tA lively Foodstand right at the intersection of Yonge and Churchill, Pojangmacha Food sells a wide variety of Korean street food for a reasonable price. A great option if you don't feel like visiting some of the more crowded and fanciful restaurants in the area, or was just out on a walk.\n\n\tPojangmacha is form of commercial establishment based out of a small tent (sometimes on wheels) or street stall found in South Korea. These establishment sell popular street foods, such as hotteok, gimbap, tteokbokki, sundae, dakkochi (Korean skewered chicken), odeng, mandu, and anju (dishes accompanied with drinking). In the evening, many of these establishments serve alcoholic beverages such as soju. Pojangmacha literally means 'covered wagon' in Korean.\n\n\tPojangmacha is a popular place to have a snack or drink late into the night. The food sold in these places can usually be eaten quickly while standing or taken away. Some offer cheap chairs or benches for customers to sit, especially the ones serving late night customers who come to drink soju."
     },
       {
       "id": 3,
@@ -56,7 +62,10 @@
           "latitude": 43.67055242937097,
           "longitude": -79.39459853175764
       },
-      "description": ""
+      "hours":
+        "Monday 11AM - 8PM\n\nTuesday 11AM - 8PM\n\nWednesday 11AM - 8PM\n\nThursday 11AM - 9PM\n\nFriday 11AM - 11PM\n\nSaturday 10AM - 11PM\n\nSunday 10AM - 9PM"
+      ,
+      "description": "\tDelysees is known for being the best bakery downtown Toronto has to offer for exquisite curated desserts for any special occasion. We specialize in top-of-the-line French pastries, Macarons,Cakes, Eclairs, classic French baked goods along with a variety of modern gluten-free and vegan desserts.\n\n\tDelysees Collection is made with the highest quality of ingredients, offering an ever changing array of enticing pastries and baked goods that make use of seasonal products and produce to ensure the freshest taste and quality of any bakery Toronto has to offer.We pair luxury with convenience! You can try our delivery option and you can also choose to pick up your bespoke treats from our bakery in downtown Toronto for your next special event or gathering."
     },
     {
       "id": 4,
@@ -75,7 +84,10 @@
           "latitude": 43.70690086471283,
           "longitude": -79.39593714297128
       },
-      "description": ""
+      "hours":
+        "Monday 12 - 10PM\n\nTuesday 12 - 10PM\n\nWednesday 12 - 10PM\n\nThursday 12 - 10PM\n\nFriday 12 - 10PM\n\nSaturday 12 - 10PM\n\nSunday 12 - 10PM"
+      ,
+      "description": "\tFormocha is the combination of Formosa(福爾摩沙) and Cha(茶Tea). Formosa means “Beautiful Island”. It is the first nickname foreigners gave Taiwan and was a beautiful part in Taiwanese history. At Fromocha we wish to delivery the some of that experience and culture through bubble tea.\n\n\tCarrying the name of Formosa, Formocha strives to bring Toronto the authentic Taiwanese bubble tea experience. With wide selections of quality tea Formocha is “Cha”(茶Tea) for everyone."
     },
     {
       "id": 5,
@@ -94,7 +106,10 @@
           "latitude": 43.664927209849665,
           "longitude": -79.4129824029222
       },
-      "description": ""
+      "hours":
+        "Monday 4PM - 12AM\n\nTuesday 4PM - 12AM\n\nWednesday 4PM - 12AM\n\nThursday 4PM - 12AM\n\nFriday 4PM - 2AM\n\nSaturday 9AM - 2AM\n\nSunday 9AM - 12AM"
+      ,
+      "description": "\tWith 15 years of experience cooking in the finest restaurants, our 'Chef Tiago'Pablo' is excited to present his vision to you and all our guests.  Our focus is International Tapas, motivated by Toronto and its unique multiculturalism.  With cocktails inspired by the streets and people around us.\n\n\t\tBrunch Every Weekend\nA lazy weekend morning, with a group of friends who love to talk. A good meal, a few mimosas, and laughs out loud. What more could you ask for? We know that brunch is both a noun and verb (because it’s not just about the food), but we also believe that good food can make all the difference at this time of day.\n\n\t\tCocktails & Drinks\nOur cocktails are made with fresh ingredients and the best quality spirits. We also do a great range of mocktails for those who prefer something non-alcoholic. Enjoy the best of everything with our carefully curated cocktails.\n\n\t\tSeasonal and Local\nWe refuse to compromise on quality in our restaurant. That's why we source our fresh ingredients from local farmers' markets. No matter what time of year, you can be sure you're eating the best of the season."
     },
     {
       "id": 6,
@@ -114,7 +129,10 @@
           "latitude": 43.648099581065225,
           "longitude": -79.39666236059432
       },
-      "description": ""
+      "hours":
+          "Monday 8AM - 7PM\n\nTuesday 8AM - 7PM\n\nWednesday 8AM - 7PM\n\nThursday 8AM - 7PM\n\nFriday 8AM - 7PM\n\nSaturday 8AM - 6PM\n\nSunday 8AM - 6PM"
+      ,
+      "description": "\tIn 2002 we opened our first location at Spadina and Queen Streets in Downtown Toronto inspired by the grand Cafés and bakeries of Europe. Everyday for 18 years we have been baking our world famous Chocolate chip cookies, hand made pastries and desserts with a commitment to simple recipes using the highest quality ingredients."
     }
 ]
 

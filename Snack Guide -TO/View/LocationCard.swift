@@ -13,7 +13,7 @@ struct LocationCard: View {
     
     var body: some View {
         ZStack {
-            Color(.blue)
+            Color.clear
                 .edgesIgnoringSafeArea(.bottom)
             ScrollView{
                 VStack {
@@ -26,10 +26,18 @@ struct LocationCard: View {
                     Text(location.name)
                         .font(.system(size: 40))
                         .bold()
-                        .foregroundColor(.white)
-                    Text(location.address.streetName)
-                        .foregroundColor(.white)
-                    LocationDetails(text: location.description, rating: location.rating, imageName: location.img)
+                    HStack {
+                        HStack {
+                            Text(location.address.number?.description ?? "0")
+                                .foregroundColor(.white)
+                            Text(location.address.streetName)
+                                .foregroundColor(.white)
+                        }.padding(.horizontal)
+                        Spacer()
+                        LocationRating(rating: location.rating).padding(.horizontal)
+                    }.padding(.bottom)
+                    LocationExpandMenu(title: "Description", description: location.description).padding(.bottom)
+                    LocationExpandMenu(title: "Hours", description: location.hours)
                 }
             }
         }
