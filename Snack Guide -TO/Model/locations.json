@@ -1,0 +1,120 @@
+[
+    {
+      "id": 1,
+      "name": "St Lawrence Market",
+      "img": "St Lawrence",
+      "type": [
+        "Sweet",
+        "Savoury",
+        "Drink",
+        "Farmer's Market"
+      ],
+      "rating": "4.6",
+      "address": {
+          "number": 92,
+          "street name": "Front Street East"
+      },
+      "coordinates":{
+          "latitude": 43.642664096,
+          "longitude": -79.369665188
+      },
+      "description": "\tIn the centre of historic Old Town Toronto, close to the hub of today’s downtown sits the St. Lawrence Market Complex (93 Front St. E.)—three buildings that have served as Toronto’s social centre, City Hall and marketplace throughout the city’s history.\t\n\nExplore the South Market building with its restaurants, artisans and specialty food vendors offering visitors the unique and lively atmosphere of an authentic farmers’ market; the Market Gallery with changing exhibits dedicated to Toronto’s art, culture and history; and the Market Kitchen with cooking classes for all ages and abilities.\t\n\nIn the North Market building, you’ll find the farmers’ market where farmers arrive every Saturday at dawn to sell their meat, cheese and produce—just as they have been doing for more than 200 years. St. Lawrence Hall, which contains the magnificent Great Hall, continues to be Toronto’s favourite site for social and business functions. Complete your visit with a walking tour of the St. Lawrence Market Complex to hear about its 200-year history."
+    },
+    {
+      "id": 2,
+      "name": "Pojangmacha Food",
+      "img": "Pojangmacha Food",
+      "type": [
+        "Savoury"
+      ],
+      "rating": "4.2",
+      "address": {
+          "number": 5323,
+          "street name": "Yonge Street"
+          
+      },
+      "coordinates":{
+          "latitude": 43.773595241521825,
+          "longitude": -79.41368017593116
+      },
+      "description": ""
+    },
+      {
+      "id": 3,
+      "name": "Delysees",
+      "img": "Delysees",
+      "type": [
+        "Sweet"
+      ],
+      "rating": "4.5",
+      "address": {
+          "number": 162,
+          "street name": "Yorkville Avenue"
+          
+      },
+      "coordinates":{
+          "latitude": 43.67055242937097,
+          "longitude": -79.39459853175764
+      },
+      "description": ""
+    },
+    {
+      "id": 4,
+      "name": "Formocha",
+      "img": "Formocha",
+      "type": [
+        "Sweet"
+      ],
+      "rating": "4.1",
+      "address": {
+          "number": 55,
+          "street name": "Englington Avenue East"
+          
+      },
+      "coordinates":{
+          "latitude": 43.70690086471283,
+          "longitude": -79.39593714297128
+      },
+      "description": ""
+    },
+    {
+      "id": 5,
+      "name": "Industry Snack Bar",
+      "img": "Industry Snack Bar",
+      "type": [
+        "Savoury"
+      ],
+      "rating": "4.8",
+      "address": {
+          "number": 594,
+          "street name": "Bloor Street West"
+          
+      },
+      "coordinates":{
+          "latitude": 43.664927209849665,
+          "longitude": -79.4129824029222
+      },
+      "description": ""
+    },
+    {
+      "id": 6,
+      "name": "Le Gourmand",
+      "img": "Le Gourmand",
+      "type": [
+        "Sweet",
+        "Savoury"
+      ],
+      "rating": "4.4",
+      "address": {
+          "number": 152,
+          "street name": "Spadina Avenue"
+          
+      },
+      "coordinates":{
+          "latitude": 43.648099581065225,
+          "longitude": -79.39666236059432
+      },
+      "description": ""
+    }
+]
+

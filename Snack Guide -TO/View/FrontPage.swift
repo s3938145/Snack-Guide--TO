@@ -8,7 +8,6 @@ import SwiftUI
 
 struct FrontPage: View {
     
-    @EnvironmentObject var snackLocationStorage: SnackLocationStorage
     @State var isExpanded = false
     @State var showingInfo = false
     @State var subviewHeight : CGFloat = 0
