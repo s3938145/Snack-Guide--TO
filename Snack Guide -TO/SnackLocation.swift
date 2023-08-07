@@ -7,29 +7,31 @@
 
 import Foundation
 
-struct SnackLocation: Identifiable, Codable {
-    var id = UUID()
-    var title: String
-    var important: Bool
-    
-    init(title: String, important: Bool) {
-        self.title = title
-        self.important = important
+//let snackLocations = try? JSONDecoder().decode(SnackLocations.self, from: jsonData)
+
+// MARK: - SnackLocations
+struct SnackLocations: Codable {
+    let locations: [Location]
+}
+
+// MARK: - Location
+struct Location: Codable {
+    let id: Int
+    let name: String
+    let img: String
+    let type: [String]
+    let rating: Double
+    let address: Address
+}
+
+// MARK: - Address
+struct Address: Codable {
+    let number: Int
+    let streetName: String
+
+    enum CodingKeys: String, CodingKey {
+        case number
+        case streetName = "street name"
     }
 }
 
-class SnackLocationStorage: ObservableObject {
-    @Published var locations = [SnackLocation]() {
-        didSet {
-            UserDefaults.standard.set(try? PropertyListEncoder().encode(locations), forKey: "locations")
-        }
-    }
-    
-    init() {
-        if let data = UserDefaults.standard.value(forKey: "locations") as? Data {
-            if let userDefaultLocations = try? PropertyListDecoder().decode(Array<SnackLocation>.self, from: data) {
-                locations = userDefaultLocations
-            }
-        }
-    }
-}

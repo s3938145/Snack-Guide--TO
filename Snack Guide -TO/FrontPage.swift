@@ -9,9 +9,23 @@ import SwiftUI
 struct FrontPage: View {
     
     @EnvironmentObject var snackLocationStorage: SnackLocationStorage
+    @State var isExpanded = false
+    @State var showingInfo = false
+    @State var subviewHeight : CGFloat = 0
     
     var body: some View {
         VStack {
+            HStack{
+                Spacer()
+                Button("i"){
+                    showingInfo = true
+                }
+                .alert(isPresented: $showingInfo){
+                    Alert(title: Text("Author"), message: Text("Ngo Chi Binh \n s3938145 \n BP162"), dismissButton: .default(Text("OK")))
+                }
+            }
+            Spacer()
+            
             Image(systemName: "globe")
                 .imageScale(.large)
                 .foregroundColor(.accentColor)
@@ -26,7 +40,7 @@ struct FrontPage: View {
             .padding()
             
             Button(action: {
-                print("Best snack location near you: St.Lawrence Market")
+
             }, label: {
                 Text("Start Snacking")
                     .font(.largeTitle)
@@ -36,39 +50,15 @@ struct FrontPage: View {
                             .foregroundColor(.green))
                         .cornerRadius(10)
             })
-            
+            Spacer()
         }
         .padding()
-        
-        NavigationView{
-            List{
-                ForEach(self.snackLocationStorage.locations)
-                {todo in
-                    
-                    if todo.important {
-                        Text(todo.title)
-                            .bold()
-                            .foregroundColor(.red)
-                            .padding(4)
-                            .background(Rectangle()
-                                .foregroundColor(.yellow)
-                                .cornerRadius(5))
-                    }else {
-                        Text(todo.title)
-                    }
-                }
-            }.navigationBarTitle("Best Snack Places")
-                .navigationBarItems(trailing: NavigationLink(destination: AddSnackPlaces()) {
-                    Text("Add")
-                })
-        }
 
-        
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        FrontPage().environmentObject(SnackLocationStorage())
+        FrontPage()
     }
 }

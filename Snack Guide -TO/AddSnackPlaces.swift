@@ -15,26 +15,26 @@ struct AddSnackPlaces: View {
     @EnvironmentObject var snackLocationStorage: SnackLocationStorage
     
     var body: some View {
-        VStack{
-            Text("Reccommend new Snack Places").font(.title).padding(.horizontal)
-            List(){
-                Section{
-                    TextField("Ex. New Snack Location", text: $locationTitle)
-                    Toggle(isOn:$important){
-                        Text("Important Toggle")
-                    }
-                    HStack {
-                        Spacer()
-                        Button("Save") {
-                            self.snackLocationStorage.locations.append(SnackLocation(title: self.locationTitle, important: self.important))
-                            self.presentationMode
-                                .wrappedValue.dismiss()
-                        }.disabled(locationTitle.isEmpty)
-                        Spacer()
-                    }
-                }
-            }.listStyle(GroupedListStyle())
-        }
+//        VStack{
+//            Text("Reccommend new Snack Places").font(.title).padding(.horizontal)
+//            List(){
+//                Section{
+//                    TextField("Ex. New Snack Location", text: $locationTitle)
+//                    Toggle(isOn:$important){
+//                        Text("Important Toggle")
+//                    }
+//                    HStack {
+//                        Spacer()
+//                        Button("Save") {
+//                            self.snackLocationStorage.locations.append(SnackLocation(title: self.locationTitle, important: self.important))
+//                            self.presentationMode
+//                                .wrappedValue.dismiss()
+//                        }.disabled(locationTitle.isEmpty)
+//                        Spacer()
+//                    }
+//                }
+//            }.listStyle(GroupedListStyle())
+//        }
         
     }
 }
