@@ -8,9 +8,34 @@
 import SwiftUI
 
 struct LocationList: View {
+    @State var searchText = ""
+    var filteredLocations: [Location] {
+        if searchText.isEmpty {
+            return locations
+        } else {
+            return locations.filter {
+                $0.name.localizedCaseInsensitiveContains(searchText)
+            }
+        }
+    }
+    
+    enum SearchScopeOption {
+        case all
+        case type(option: SnackType)
+        
+        var title: String {
+            switch self {
+            case .all:
+                return "All"
+            case .type(option: let option):
+                return option.rawValue.capitalized
+            }
+        }
+    }
+    
     var body: some View {
         NavigationView {
-            List(locations) {
+            List(filteredLocations) {
                 location in
                 NavigationLink {
                     LocationCard(location: location)
@@ -18,7 +43,7 @@ struct LocationList: View {
                     LocationRow(location: location)
                 }
                 .navigationTitle("Snack Locations")
-            }
+            }.searchable(text: $searchText, placement: .navigationBarDrawer(displayMode: .always),prompt: "Search for your favourite snack place")
         }
     }
 }

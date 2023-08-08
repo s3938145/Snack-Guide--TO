@@ -14,7 +14,7 @@ struct Location: Identifiable, Codable {
     var name: String
     var img: String
     var image: Image {Image(img)}
-    var type: [String]
+    var type: SnackType
     var rating: String
     var address: Address
     var hours: String
@@ -26,6 +26,15 @@ struct Location: Identifiable, Codable {
             longitude: coordinates.longitude
         )
     }
+}
+
+enum SnackType: String, Codable, CaseIterable, Identifiable {
+    
+    case Sweet = "Sweet"
+    case Savoury = "Savoury"
+    case Drink = "Drink"
+    
+    var id: String {rawValue}
 }
 
 struct Address: Codable {

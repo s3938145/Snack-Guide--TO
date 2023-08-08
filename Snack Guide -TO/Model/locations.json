@@ -3,12 +3,8 @@
       "id": 1,
       "name": "St Lawrence Market",
       "img": "St Lawrence",
-      "type": [
+      "type":
         "Sweet",
-        "Savoury",
-        "Drink",
-        "Farmer's Market"
-      ],
       "rating": "4.6",
       "address": {
           "number": 92,
@@ -27,9 +23,8 @@
       "id": 2,
       "name": "Pojangmacha Food",
       "img": "Pojangmacha Food",
-      "type": [
-        "Savoury"
-      ],
+      "type":
+        "Savoury",
       "rating": "4.2",
       "address": {
           "number": 5323,
@@ -49,9 +44,8 @@
       "id": 3,
       "name": "Delysees",
       "img": "Delysees",
-      "type": [
-        "Sweet"
-      ],
+      "type":
+        "Sweet",
       "rating": "4.5",
       "address": {
           "number": 162,
@@ -71,9 +65,8 @@
       "id": 4,
       "name": "Formocha",
       "img": "Formocha",
-      "type": [
-        "Sweet"
-      ],
+      "type":
+        "Drink",
       "rating": "4.1",
       "address": {
           "number": 55,
@@ -93,9 +86,8 @@
       "id": 5,
       "name": "Industry Snack Bar",
       "img": "Industry Snack Bar",
-      "type": [
-        "Savoury"
-      ],
+      "type":
+        "Savoury",
       "rating": "4.8",
       "address": {
           "number": 594,
@@ -115,10 +107,8 @@
       "id": 6,
       "name": "Le Gourmand",
       "img": "Le Gourmand",
-      "type": [
-        "Sweet",
-        "Savoury"
-      ],
+      "type":
+        "Savoury",
       "rating": "4.4",
       "address": {
           "number": 152,

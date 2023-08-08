@@ -15,7 +15,7 @@ struct LocationRow: View {
         HStack{
             location.image
                 .resizable()
-                .frame(width: 70, height: 70)
+                .frame(width: 90, height: 90)
             VStack(alignment: .leading){
                 Text(location.name)
                 HStack{
@@ -24,6 +24,12 @@ struct LocationRow: View {
                     Image("star")
                         .resizable()
                         .frame(width: 20, height: 20)
+                    }
+                HStack {
+                    Text(location.type.rawValue)
+                            .font(.system(size: 14))
+                            .padding(5)
+                            .background(Color.gray.cornerRadius(20))
                 }
             }
         }
